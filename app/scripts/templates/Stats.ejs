@@ -1,0 +1,15 @@
+<footer id="footer">
+  <span id="todo-count"><strong><%= remaining %></strong> <%= remaining == 1 ? 'item' : 'items' %> left</span>
+  <ul id="filters">
+    <li>
+      <a href="javascript:void(0)" id="all" class="selected">All</a>
+    </li>
+    <li>
+      <a href="javascript:void(0)" id="active">Active</a>
+    </li>
+    <li>
+      <a href="javascript:void(0)" id="completed">Completed</a>
+    </li>
+  </ul>
+  <button id="clear-completed">Clear completed (<%= done %>)</button>
+</footer>

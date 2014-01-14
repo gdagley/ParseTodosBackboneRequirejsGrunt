@@ -1,0 +1,21 @@
+<div id="user-info">
+  Signed in as <%= Parse.User.current().get("username") %> (<a href="#" class="log-out">Log out</a>)
+</div>
+
+<div class="section">
+
+  <header id="header">
+    <input id="new-todo" placeholder="What needs to be done?" type="text" />
+  </header>
+
+  <div id="main">
+    <input id="toggle-all" type="checkbox">
+    <label for="toggle-all">Mark all as complete</label>
+
+    <ul id="todo-list">
+      <img src='images/spinner.gif' class='spinner' />
+    </ul>
+  </div>
+
+  <div id="todo-stats"></div>
+</div>
